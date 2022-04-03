@@ -1,5 +1,5 @@
-const Button = ({ text }) => {
-    return <button className='btn-select'>{text}</button>;
-  };
+const Button = ({ selectedlist, uri }) => {
+  return <button className='btn-select'>{selectedlist.includes(uri) ? "Deselect" : "Select"}</button>;
+};
 
-  export default Button;
+export default Button;
